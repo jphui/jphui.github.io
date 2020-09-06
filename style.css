@@ -6,11 +6,24 @@ b {
     font-weight: bold;
 }
 
+.view-wrapper{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1;
+    display: flex;
+}
+
 .flex-container {
     display: flex;
 }
 
-video {
+/*
+This is probably bad practice...
+*/
+.video {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -20,12 +33,9 @@ video {
 
 .main {
     position: relative;
-    margin: 50vh auto 0;
-    transform: translateY(-50%);
+    margin: auto;
     width: 900px;
-    
     border: 2px solid white;
-    
 }
 
 h1 {
@@ -93,7 +103,6 @@ video {
     padding: 25px;
     background: #2C2F33;
     color:#FFFFFF;
-    z-index: 1;
     opacity: .75;
 }
 
