@@ -1,14 +1,51 @@
+i {
+    font-style:italic;
+}
+
+b {
+    font-weight: bold;
+}
+
 .section {
     position: relative;
     width: 900px;
     margin: auto;
+    /*
     border: 1px solid white;
+    */
 }
 
-.section h1 {
+h1 {
+    font-family: "Courier New";
     font-size: 3rem;
 }
-.section h2 {
+.hello-anim {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    animation: typewriter 6s steps(8) infinite normal both,
+    blinkCursor 700ms steps(2) infinite normal;
+    border-right: 4px solid white;
+}
+@keyframes typewriter {
+    0%, 80%, 100% {
+        width: 0;
+    }
+    30%, 50% {
+        width: 8ch;
+    }
+}
+@keyframes blinkCursor {
+    from {
+        border-style: solid;
+    }
+    to {
+        border-style: hidden;
+    }
+}
+
+h2 {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 20px;
@@ -35,12 +72,12 @@ video {
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid white;
 }
 
 .clear { clear:both; }
 
-.blob {
+.blob, .bloblink {
+    flex: 1;
     margin: 5px;
     box-sizing: border-box;
     border: 2px solid transparent;
@@ -53,22 +90,34 @@ video {
 }
 
 .blob:hover {
+    border: 2px solid white;
+}
+.bloblink:hover {
     border: 2px solid crimson;
 }
 
-/* unvisited link */
-a:link {
-    color: DodgerBlue;
+a:link, a:visited {
+    color: #99AAB5;
     text-decoration: none;
 }
 
-/* visited link */
-a:visited {
-    color: DodgerBlue;
-    text-decoration: none;
-}
-    
-/* mouse over link */
 a:hover {
-    text-decoration: underline;
+    color: crimson;
+}
+
+.space-container {
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position:relative;
+    margin: auto;
+}
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
 }

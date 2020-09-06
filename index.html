@@ -7,9 +7,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 	<link rel="stylesheet" href="style.css">
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">
 </head>
 <body style="background-color:black; font-family: 'Roboto Slab', serif;">
@@ -18,59 +18,75 @@
 	</video>
 	<div class="section">
 		<div class="flex-container">
-			<div class="blob">
-				<h1>hello :)</h1>
+			<div class="blob" style="max-width: 18em;">
+				<h1 class="hello-anim">hello :)</h1>
 			</div>
-			<!--
-			<a href="https://jhui.gq">
-				<div class="blob" style="padding: 10px">
-					<h2>🏠</h2>
+			<a href="https://jhui.gq" style="display: flex; align-self: flex-end;">
+				<div class="bloblink" style="padding: 1em;">
+					<h2 style="margin: 0;">🏠</h2>
 				</div>
 			</a>
-			<a href="https://spam-email-generator.herokuapp.com">
-				<div class="blob" style="padding: 10px">
-					<h2>🧞</h2>
-				</div>
-			</a>
-			-->
+			<div class="clear"></div>
 		</div>
 		<div class="flex-container">
-			<div class="blob" style="padding: 20px">
+			<div class="blob" style="padding: 1.25em">
 				<p style="text-align: center">Ni-Howdy! My name is Jonathan and I am a third-year, senior-status undergraduate at UCLA studying Computer Science. This is my personal site, so make yourself at home and feel free to hire me while you're here.</p>
-			</div>
-		</div>
-		<div class="flex-container">
-			<div class="blob" style="flex:1;">
-				<h2>👀</h2>
-				<p style="font-style:italic; text-align:center; width: 300px;"><em>I am currently seeking a position as a Software Engineering Intern for Winter/Spring and Summer of 2021.</em></p>
-			</div>
-			<div class="blob" style="flex:1">
-				<h2>💼</h2>
-				<p><a href="https://docs.google.com/document/d/1TEZFzSN_rOueIP1ONXHzx0HfPSBsJFgtUjs-g7yJYX8/edit?usp=sharing">Resume</a></p>
-				<p><a href="https://linkedin.com/in/jphui">LinkedIn</a></p>
-				<p><a href="https://github.com/jphui">GitHub</a></p>
 			</div>
 			<div class="clear"></div>
 		</div>
 		<div class="flex-container">
-			<div class="blob" style="flex: 0 1 auto;">
+			<div class="blob">
+				<h2>👀</h2>
+				<p style="text-align:center; width: 22em;"><i>I am currently seeking a position as a Software Engineering Intern for Winter/Spring and Summer of 2021.</i></p>
+			</div>
+			<div class="blob">
+				<h2>💼</h2>
+				<div class="space-container">
+					<a target="_blank" href="https://docs.google.com/viewer?url=https://docs.google.com/document/d/1TEZFzSN_rOueIP1ONXHzx0HfPSBsJFgtUjs-g7yJYX8/export?format=pdf">
+						<img src="media/icons/res.png" style="width:60px;height:60px;">
+					</a>
+					<a target="_blank" href="https://linkedin.com/in/jphui">
+						<img src="media/icons/in.png" style="width:60px;height:60px;">
+					</a>
+					<a target="_blank" href="https://github.com/jphui">
+						<img src="media/icons/gh.png" style="width:60px;height:60px;">
+					</a>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="flex-container">
+			<a href="https://eggman.ml" style="display: flex; flex: 1">
+				<div class="bloblink">
+					<h2>🧞</h2>
+					<div style="text-align:center;">
+						<p>Click this blob to meet my</p>
+						<p><b>Email Generator Genie</b><br>(aka E.G.G. Man)</p>
+						<p>
+							He is a Java webapp that will create a mock "spam email" after you train him with your input.
+							Go check him out, he complains about being bored too often!
+						</p>
+					</div>
+				</div>
+			</a>
+			<div class="blob" style="padding: 0">
+				<div class="contact-container">
+					<img src="media/pfp.jpg" style="width:70%; border-radius:50%;">
+					<p style="text-align:center; position: absolute; bottom: 10%;"><a style="color:crimson" target="_blank" href="mailto:jonjonhui999@gmail.com">📧 jonjonhui999@gmail.com</a></p>
+				</div>
+			</div>
+			<div class="blob">
 				<h2>🧑🏻</h2>
 				<p>hobbies <span style="color:#99AAB5">🎮,🏋️,🏕️ </span></p>
-				<p>food <a onMouseOver="this.style.color='#1e90ff'" onMouseOut="this.style.color='#99AAB5'" style="color:#99AAB5; text-decoration:underline;" href="https://www.olivegarden.com/alfredo-sauce">Olive Garden Alfredo</a></p>
-				<p>movie <span style="color:#99AAB5">Disney's <a onMouseOver="this.style.color='#1e90ff'" onMouseOut="this.style.color='#99AAB5'" style="color:#99AAB5; text-decoration:underline;" href="https://www.youtube.com/watch?v=XubM62q9nlw">Up</a></span></p>
+				<p>food <a target="_blank" style="text-decoration:underline;" href="https://www.olivegarden.com/alfredo-sauce">Olive Garden Alfredo</a></p>
+				<p>movie <span style="color:#99AAB5">Disney's <a target="_blank" style="text-decoration:underline;" href="https://www.youtube.com/watch?v=XubM62q9nlw">Up</a></span></p>
 				<p>show <span style="color:#99AAB5">Clone Wars</span></p>
 				<p>book <span style="color:#99AAB5">Ready Player One</span></p>
 				<p>artist <span style="color:#99AAB5">Joji</span></p>
 				<p>emoji 🤔</p>
 				<p>mother's maiden name <span style="color:#99AAB5">nice try</span></p>
 			</div>
-			<div class="blob" style="flex: 0 1 auto;">
-				<p style="text-align:center;"><a href="mailto:jonjonhui999@gmail.com">📧 jonjonhui999@gmail.com</a></p>
-			</div>
-			<div class="blob" style="flex: 1;">
-				<h2>▶️</h2>
-				<p style="text-align:center;"></p>
-			</div>
+			<div class="clear"></div>
 		</div>
 	</div>
 </body>
