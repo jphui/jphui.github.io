@@ -7,34 +7,34 @@ b {
 }
 
 .view-wrapper{
-    position: fixed;
-    right: 0;
-    bottom: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
     min-width: 100%;
     min-height: 100%;
     z-index: 1;
     display: flex;
+    overflow: auto;
 }
 
 .flex-container {
     display: flex;
 }
 
-/*
-This is probably bad practice...
-*/
-.video {
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
     position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+    top: 0;
+    left: 0;
 }
 
+
 .main {
+    width:900px;
     position: relative;
     margin: auto;
-    width: 900px;
 }
 
 h1 {
@@ -82,15 +82,6 @@ p + p {
     margin-top: 10px;
 }
 
-video {
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
 .clear { clear:both; }
 
 .blob, .bloblink {
@@ -101,9 +92,11 @@ video {
     border: 2px solid transparent;
     border-radius: 25px;
     padding: 25px;
+    /*
     background: #2C2F33;
+    */
+    background: rgba(44, 47, 51, .8);
     color:#FFFFFF;
-    opacity: .75;
 }
 
 .blob:hover {
@@ -112,6 +105,15 @@ video {
 .bloblink:hover {
     border: 2px solid crimson;
 }
+
+.img-link {
+    border: 2px transparent; 
+}
+
+.img-link:hover {
+    box-shadow: 0 0 0 1.5pt crimson;
+}
+
 
 a:link, a:visited {
     color: #99AAB5;
