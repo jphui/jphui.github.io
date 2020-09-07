@@ -113,7 +113,7 @@ video {
 /* force-wrap... ID-based stuff is really jank... don't ever do this (again) */
 @media only screen and (max-width: 515px) and (min-width: 50px) {
     #fw1, #fw2{
-        flex: 0 0 100%;
+        flex: 0 0 97vw;
     }
 }
 
