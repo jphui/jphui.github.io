@@ -1,7 +1,21 @@
 i { font-style:italic; }
 b { font-weight: bold; }
 
-html { font-size: 62.5%; /* 10px */ } 
+/* big */
+@media only screen and (min-width: 900px) {
+    html { font-size: 62.5%; /*62.5% = 10px*/} 
+}
+
+/* med */
+@media only screen and (max-width: 899px) and (min-width: 600px) {
+    html { font-size: 1vw; /*62.5% = 10px*/} 
+}
+
+/* small */
+@media only screen and (max-width: 599px) and (min-width: 50px) {
+    html { font-size: 62.5%; /*62.5% = 10px*/} 
+}
+
 body {
     background-color:black;
     font-family: 'Roboto Slab', serif;
@@ -75,6 +89,9 @@ video {
 
 .main {
     width:90rem;
+    /*
+    max-width:90rem;
+    */
     position: relative;
     margin: auto;
 }
@@ -88,7 +105,7 @@ video {
     box-sizing: border-box;
     border: .2rem solid transparent;
     border-radius: 2rem;
-    padding: 2rem;
+    padding: 2.4rem;
     background: rgba(44, 47, 51, .8);
     color:#FFFFFF;
 }
