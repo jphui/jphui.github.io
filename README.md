@@ -1,1 +1,1 @@
-This is my personal website :)
+This is my mobile-friendly webfolio built frugally from the ground up using only HTML/CSS. I took inspiration from Apple's minimalist design philosophy and incorported a dark-mode-friendly color palette based on Discord and my favorite film franchise, Star Wars :)
