@@ -131,9 +131,6 @@ video {
     color:#FFFFFF;
 }
 
-.blob:hover {
-    border: .2rem solid white;
-}
 .bloblink:hover {
     border: .2rem solid crimson;
 }
